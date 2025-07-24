@@ -1,5 +1,37 @@
 #!/usr/bin/env bash
 
+# =================== HELP SECTION ===================
+if [[ "$1" == "--help" || "$1" == "-h" ]]; then
+  echo "\n🧬 DBP_run_pipeline_v2 - MinION eDNA Metabarcoding Pipeline"
+  echo "--------------------------------------------------------"
+  echo "Usage: DBP_run_pipeline_v2 [options]"
+  echo ""
+  echo "NanoFilt options:"
+  echo "  -q                Minimum quality score (default: 10)"
+  echo "  -l                Minimum read length (default: 180)"
+  echo "  -L                Maximum read length (default: 320)"
+  echo ""
+  echo "Cutadapt options:"
+  echo "  --primer-fwd      Forward primer sequence"
+  echo "  --primer-rev      Reverse primer sequence"
+  echo "  --cutadapt-error  Max error rate for primer match (default: 0.2)"
+  echo "  --cutadapt-minlen Minimum length after trimming (default: 150)"
+  echo "  --cutadapt-maxlen Maximum length after trimming (default: 200)"
+  echo ""
+  echo "VSEARCH options:"
+  echo "  --vsearch-id      OTU clustering identity threshold (default: 0.95)"
+  echo ""
+  echo "BLASTn options:"
+  echo "  --blast-evalue    E-value threshold (default: 0.001)"
+  echo "  --blast-identity  Minimum percent identity (default: 90)"
+  echo "  --blast-qcov      Minimum query coverage (default: 90)"
+  echo ""
+  echo "General options:"
+  echo "  -t                Number of threads to use (default: 4)"
+  echo "  --help            Show this help message and exit"
+  exit 0
+fi
+
 # =================== DEFAULT PARAMETERS ===================
 quality_threshold=10
 min_length=180
