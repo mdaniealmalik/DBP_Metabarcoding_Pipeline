@@ -63,4 +63,4 @@ Parameter information:
 | **BLASTn**   | `--blast-evalue`    | E-value cutoff for hits        |
 |              | `--blast-identity`  | Min percent identity           |
 |              | `--blast-qcov`      | Min query coverage             |
-| **General**  | `-t`                | Number of CPU threads to use   |
+| **CPU Threads**  | `-t`                | Number of CPU threads to use   |
