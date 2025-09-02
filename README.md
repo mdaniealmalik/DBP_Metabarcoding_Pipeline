@@ -1,19 +1,9 @@
 # DBP_pipeline_nanopore_metabarcoding
 
-# 🧬 Introduction
-
-The **DBP Metabarcoding Pipeline v2** is designed for processing Nanopore eDNA amplicon sequencing data.  
-It performs the following steps:
-
-1. **Read filtering** (NanoFilt)  
-2. **Primer trimming** (Cutadapt)  
-3. **OTU clustering** (VSEARCH)  
-4. **Taxonomic assignment** (BLASTn)  
-
-### 📖 Introduction
+# 📖 Introduction
 
 The **DBP Metabarcoding Pipeline v2** is designed for Nanopore eDNA amplicon sequencing data.  
-It assumes that **Dorado** (or another Nanopore basecaller) has already performed:  
+Please note that before using this pipeline, it is assumed that Dorado (or another Nanopore basecaller) has already performed
 
 - ✅ Basecalling  
 - ✅ Demultiplexing (per-sample FASTQ files)  
@@ -21,7 +11,7 @@ It assumes that **Dorado** (or another Nanopore basecaller) has already performe
 
 ---
 
-### 🧬 Pipeline Workflow  
+## 🧬 Pipeline Workflow  
 
 The pipeline then proceeds with the following steps:
 
