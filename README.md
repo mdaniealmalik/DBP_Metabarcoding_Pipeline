@@ -33,7 +33,7 @@ The pipeline then proceeds with the following steps:
 
 
 
-# 💻 Installation
+# 💻 Installation (Step by Step)
 
 Clone the repository and install dependencies using Conda:
 
@@ -56,6 +56,9 @@ conda activate DBP_pipeline
 **Make the pipeline script executable**
 ```bash
 cp bin/DBP_run_pipeline_v2.sh DBP_run_pipeline_v2.sh
+```
+```bash
+rm -r bin
 ```
 ```bash
 chmod +x DBP_run_pipeline_v2.sh
