@@ -97,7 +97,7 @@ You may use:
 - A curated database (e.g., **MitoFish 12S**, **NCBI RefSeq**)  
 - A custom database built from your target taxa
 
-🐟 We have prepared a curated sequence database for a data sequence fit for MiFish, containing only marine fish species from Indonesia. Please visit [this link](https://github.com/mdaniealmalik/DBP_pipeline_nanopore_metabarcoding/tree/main/Curated-Metabarcoding-Database-for-Marine-Fish-in-Indonesia) to download the database and view details of the curation process.
+🐟 We have prepared a curated sequence database (Database Ikan Indonesia or DAKI) for a data sequence fit for MiFish, containing only marine fish species from Indonesia. Please visit [this link](https://github.com/mdaniealmalik/DBP_pipeline_nanopore_metabarcoding/tree/main/Curated-Metabarcoding-Database-for-Marine-Fish-in-Indonesia) to download the database and view details of the curation process.
 
 ⚠️ Make sure the file is named `database.fasta` and stored inside the `database/` folder before running the pipeline.
 
