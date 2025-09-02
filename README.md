@@ -153,7 +153,7 @@ Parameter information:
 | **BLASTn**   | `--blast-evalue`    | E-value cutoff for hits (**Default: 0.001**)    |
 |              | `--blast-identity`  | Min percent identity (**Default: 0.97**)         |
 |              | `--blast-qcov`      | Min query coverage  (**Default: 0.90**)         |
-|              | `--blast_max_target`          | how many top database sequences (hits) (**Default: 25**)  |
+|              | `--blast_max_target`          | how many top database sequences (hits) (**Default: 10**)  |
 | **CPU Threads**  | `-t`                | Number of CPU threads to use (**Default: 4**)  |
 
 
