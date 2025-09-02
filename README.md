@@ -37,7 +37,8 @@ MyProject/
 │   └── sample3.fastq.gz
 │
 ├── database/                 # Reference database for BLAST
-│   └── database.fasta        # Custom or curated reference sequences
+│   └── database.fasta        # Custom or curated reference sequences (only accession number at the header)
+│   └── database.txt          # Custom or curated reference taxon names (Accesion number and taxon information) 
 │
 ├── DBP_run_pipeline_v2        # Pipeline script (make sure it's executable)
 │
