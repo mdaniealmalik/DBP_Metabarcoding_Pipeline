@@ -37,10 +37,20 @@ The pipeline then proceeds with the following steps:
 
 Clone the repository and install dependencies using Conda:
 
+**Clone the repository**  
+```bash
+git clone https://github.com/mdaniealmalik/DBP_pipeline_nanopore_metabarcoding.git
+```
+```bash
+cd DBP_pipeline_nanopore_metabarcoding
+```
+
+**Create and activate the conda environment**
 ```bash
 conda env create -f DBP_dependencies_pipeline_v2.yml
 conda activate DBP_pipeline
 ```
+
 Make the pipeline script executable:
 ```bash
 chmod +x DBP_run_pipeline_v2.sh
