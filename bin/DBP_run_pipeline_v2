@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # =================== DEFAULT PARAMETERS ===================
-quality_threshold=10
+quality_threshold=12
 min_length=180
 max_length=320
 
