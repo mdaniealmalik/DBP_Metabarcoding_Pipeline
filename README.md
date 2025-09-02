@@ -173,11 +173,10 @@ The file **must be tab-separated** with two columns:
 
 If your file is not in tab-separated format, you can fix it using one of the following commands **before running the LCA step**:
 
-**Case 1: File is comma-separated**
+**Case: Your file is comma-separated**
 ```bash
-awk -F',' '{print $1 "\t" $2}' database/database.txt > database/database.txt
+awk -F',' '{print $1 "\t" $2}' database/database.txt > database/database_fixed.txt
 ```
-**your file still semicolon-seperated**
 ```bash
-awk -F';' '{acc=$1; $1=""; sub(/^;/,""); print acc "\t" $0}' database/database.txt > database/database.txt
+mv database/database_fixed.txt database/database.txt
 ```
