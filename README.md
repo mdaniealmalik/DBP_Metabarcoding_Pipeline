@@ -10,7 +10,38 @@ It performs the following steps:
 3. **OTU clustering** (VSEARCH)  
 4. **Taxonomic assignment** (BLASTn)  
 
+### 📖 Introduction
+
+The **DBP Metabarcoding Pipeline v2** is designed for Nanopore eDNA amplicon sequencing data.  
+It assumes that **Dorado** (or another Nanopore basecaller) has already performed:  
+
+- ✅ Basecalling  
+- ✅ Demultiplexing (per-sample FASTQ files)  
+- ✅ Adapter and barcode removal  
+
 ---
+
+### 🧬 Pipeline Workflow  
+
+The pipeline then proceeds with the following steps:
+
+1. **Quality Filtering** – remove low-quality or too short/long reads  
+   - Tool: `NanoFilt`  
+
+2. **Primer Trimming** – remove amplification primers  
+   - Tool: `Cutadapt`  
+
+3. **OTU Clustering** – dereplicate, cluster, and remove chimeras  
+   - Tool: `VSEARCH`  
+
+4. **Taxonomic Assignment** – assign sequences to reference database  
+   - Tool: `BLASTn`  
+
+5. **Results** – generate:  
+   - `otu_table.tsv` (OTU abundance table)  
+   - `result_blastn.txt` (BLAST taxonomy results)  
+
+
 
 # 💻 Installation
 
