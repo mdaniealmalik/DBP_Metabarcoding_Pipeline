@@ -47,7 +47,7 @@ cd DBP_pipeline_nanopore_metabarcoding
 
 **Create and activate the conda environment**
 ```bash
-conda env create -f DBP_dependencies_pipeline_v2.yml
+conda env create -f  environment.yml
 ```
 ```bash
 conda activate DBP_pipeline
