@@ -25,7 +25,8 @@ The pipeline then proceeds with the following steps:
    - Tool: `VSEARCH`  
 
 4. **Taxonomic Assignment** – assign sequences to reference database  
-   - Tool: `BLASTn`  
+   - Tool: `BLASTn`
+   - Perform `Lowest Common Ancestor (LCA)` estimation from BLASTN results
 
 5. **Results** – generate:  
    - `otu_table.tsv` (OTU abundance table)  
