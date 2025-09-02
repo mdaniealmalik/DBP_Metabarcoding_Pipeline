@@ -46,7 +46,7 @@ while [[ "$#" -gt 0 ]]; do
       echo "  --blast-evalue    E-value threshold (default: 0.001)"
       echo "  --blast-identity  Minimum percent identity (default: 90)"
       echo "  --blast-qcov      Minimum query coverage (default: 90)"
-      echo "  --max_target_seqs  Maximum target seqs to blast (default: 25)"
+      echo "  --blast_max_target  Maximum target seqs to blast (default: 25)"
       echo ""
       echo "General options:"
       echo "  -t                Number of threads to use (default: 4)"
