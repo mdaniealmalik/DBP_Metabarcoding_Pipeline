@@ -159,9 +159,9 @@ Parameter information:
 
 **Run the optional LCA refinement**
 ```bash
-Rscript DBP_LCA_assign.R 90 0.001 8 MyDataset
+Rscript DBP_LCA_assign.R
 ```
-Or customise parameters (follow your minimum identity from blastn):
+Or customise parameter (follow your minimum identity from blastn):
 ```bash
 Rscript DBP_LCA_assign.R 97
 ```
