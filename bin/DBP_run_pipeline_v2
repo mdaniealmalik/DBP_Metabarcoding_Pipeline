@@ -11,11 +11,11 @@ cutadapt_error=0.2
 cutadapt_minlen=150
 cutadapt_maxlen=200
 
-vsearch_id=0.95
+vsearch_id=0.97
 blast_evalue=0.001
-blast_identity=90
+blast_identity=97
 blast_qcov=90
-blast_max_target=2    # NEW: default number of BLAST hits per query
+blast_max_target=25    # NEW: default number of BLAST hits per query
 threads=4
 
 # =================== ARGUMENT PARSING ===================
