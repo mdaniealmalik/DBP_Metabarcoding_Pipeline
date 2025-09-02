@@ -175,8 +175,7 @@ If your file is not in tab-separated format, you can fix it using one of the fol
 
 **Case: Your file is space-separated**
 ```bash
-awk '{$1=$1; print $1 "\t" $2}' OFS="\t" database/database.txt > database/database_fixed.txt
-
+awk -F'" "' '{gsub(/"/, "", $1); gsub(/"/, "", $2); print $1 "\t" $2}' database/database.txt > database/database_fixed.txt
 ```
 ```bash
 mv database/database_fixed.txt database/database.txt
