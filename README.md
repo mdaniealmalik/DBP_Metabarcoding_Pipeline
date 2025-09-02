@@ -3,7 +3,7 @@
 # 📖 Introduction
 
 The **DBP Metabarcoding Pipeline v2** is designed for Nanopore eDNA amplicon sequencing data.  
-Please note that before using this pipeline, it is assumed that Dorado (or another Nanopore basecaller) has already performed
+Please note that before using this pipeline, it is assumed that Dorado (or another Nanopore basecaller) has already performed:
 
 - ✅ Basecalling  
 - ✅ Demultiplexing (per-sample FASTQ files)  
