@@ -1,10 +1,21 @@
 name: dbp_pipeline
 channels:
-  - bioconda
   - conda-forge
+  - bioconda
+  - defaults
 dependencies:
+  # Core tools for DBP pipeline
   - nanofilt
   - cutadapt
   - seqtk
   - vsearch
   - blast
+
+  # R base and packages needed for LCA script
+  - r-base
+  - r-readr
+  - r-dplyr
+  - r-stringr
+  - r-tidyr
+  - r-tibble
+
