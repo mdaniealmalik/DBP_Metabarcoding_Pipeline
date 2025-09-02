@@ -133,7 +133,7 @@ bash DBP_run_pipeline_v2 \
   --blast-evalue 0.001 \
   --blast-identity 93 \
   --blast-qcov 95 \
-  --blast_max_target 25\
+  --blast-max-target 25\
   -t 8
 ```
 **Note**: Sometimes the native barcode includes an overhang with the primer, so make sure to input the primer sequence with the overhang.
