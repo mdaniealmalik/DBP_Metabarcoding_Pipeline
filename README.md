@@ -122,7 +122,7 @@ bash DBP_run_pipeline_v2.sh \
   --cutadapt-minlen 160 \
   --cutadapt-maxlen 220 \
   --vsearch-id 0.97 \
-  --blast-evalue 1e-5 \
+  --blast-evalue 0.001 \
   --blast-identity 93 \
   --blast-qcov 95 \
   --blast_max_target 25\
