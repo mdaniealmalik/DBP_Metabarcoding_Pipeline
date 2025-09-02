@@ -66,28 +66,28 @@ When preparing your files for the pipeline, your working directory should be org
 
 ```graphql
 MyProject/
-├── 1_Sample/                 # Raw input FASTQ files (gzip-compressed)
+├── 1_Sample/                       # Raw input FASTQ files (gzip-compressed)
 │   ├── sample1.fastq.gz
 │   ├── sample2.fastq.gz
 │   └── sample3.fastq.gz
 │
-├── database/                 # Reference database for BLAST
-│   └── database.fasta        # Custom or curated reference sequences (only accession number at the header)
-│   └── database.txt          # Custom or curated reference taxon names (Accession number and taxon information) 
+├── database/                       # Reference database for BLAST
+│   └── database.fasta              # Custom or curated reference sequences (only accession number at the header)
+│   └── database.txt                # Custom or curated reference taxon names (Accession number and taxon information) 
 │
-├── DBP_run_pipeline_v2    # Pipeline script (make sure it's executable)
-├── DBP_LCA_assign.R          # Pipeline script for LCA (make sure it's executable)
+├── DBP_run_pipeline_v2             # Pipeline script (make sure it's executable)
+├── DBP_LCA_assign.R                # Pipeline script for LCA (make sure it's executable)
 │
-├── 2_NanoFilt_output/        # (Auto-generated) Quality filtered reads
-├── 3_cutadapt_output/        # (Auto-generated) Primer-trimmed reads
-├── 4_combined_fasta/         # (Auto-generated) FASTA converted reads
-├── 5_vsearch/                # (Auto-generated) VSEARCH results
+├── 2_NanoFilt_output/              # (Auto-generated) Quality filtered reads
+├── 3_cutadapt_output/              # (Auto-generated) Primer-trimmed reads
+├── 4_combined_fasta/               # (Auto-generated) FASTA converted reads
+├── 5_vsearch/                      # (Auto-generated) VSEARCH results
 │   ├── rename_fasta/
 │   └── combine/
 │
-├── otu_table.tsv             # (Auto-generated) OTU abundance table
-└── result_blastn.txt         # (Auto-generated) BLAST taxonomic assignments
-└── mydataset_lca_assignments.tsv         # (Auto-generated) LCA process
+├── otu_table.tsv                   # (Auto-generated) OTU abundance table
+└── result_blastn.txt               # (Auto-generated) BLAST taxonomic assignments
+└── mydataset_lca_assignments.tsv   # (Auto-generated) LCA process
 ```
 You can use the data structure in [my example data and database](https://github.com/mdaniealmalik/DBP_pipeline_nanopore_metabarcoding/tree/main/MyProject) to try this pipeline, and before trying it on your real datasets. 
 
