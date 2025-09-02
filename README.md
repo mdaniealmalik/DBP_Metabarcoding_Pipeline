@@ -165,3 +165,19 @@ Or customise parameter (follow your minimum identity from blastn):
 ```bash
 Rscript DBP_LCA_assign.R 97
 ```
+⚠️ If you encounter an error while building the LCA table, please check your `database.txt` format.  
+The file **must be tab-separated** with two columns:  
+
+1. **Accession** (e.g., `AP018430.1`)  
+2. **Full lineage** (e.g., `Eukaryota;Chordata;Actinopteri;...`)  
+
+If your file is not in tab-separated format, you can fix it using one of the following commands **before running the LCA step**:
+
+**Case 1: File is comma-separated**
+```bash
+awk -F',' '{print $1 "\t" $2}' database/database.txt > database/database.txt
+```
+**your file still semicolon-seperated**
+```bash
+awk -F';' '{acc=$1; $1=""; sub(/^;/,""); print acc "\t" $0}' database/database.txt > database/database.txt
+```
