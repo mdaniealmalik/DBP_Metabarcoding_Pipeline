@@ -13,7 +13,7 @@ Please note that before using this pipeline, it is assumed that Dorado (or anoth
 
 ## 🧬 Pipeline Workflow  
 
-The pipeline then proceeds with the following steps:
+The pipeline proceeds with the following steps:
 
 1. **Quality Filtering** – remove low-quality or too short/long reads  
    - Tool: `NanoFilt`  
@@ -24,7 +24,7 @@ The pipeline then proceeds with the following steps:
 3. **OTU Clustering** – dereplicate, cluster, and remove chimeras  
    - Tool: `VSEARCH`  
 
-4. **Taxonomic Assignment** – assign sequences to reference database  
+4. **Taxonomic Assignment** – assign sequences to reference database
    - Tool: `BLASTn`
    - Perform `Lowest Common Ancestor (LCA)` estimation from BLASTN results
 
@@ -32,8 +32,6 @@ The pipeline then proceeds with the following steps:
    - `otu_table.tsv` (OTU abundance table)  
    - `result_blastn.txt` (BLAST taxonomy result)
    - `mydataset_lca_assignments.tsv` (LCA result)
-
-
 
 # 💻 Installation (Step by Step)
 
