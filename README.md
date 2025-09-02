@@ -101,16 +101,16 @@ bash DBP_run_pipeline_v2.sh \
 Parameter information:
 | Tool         | Parameter           | Description                    |
 | ------------ | ------------------- | ------------------------------ |
-| **NanoFilt** | `-q 12`             | Min Phred quality score        |
-|              | `-l 200`            | Min read length                |
-|              | `-L 320`            | Max read length                |
-| **Cutadapt** | `--primer-fwd`      | Forward primer sequence        |
-|              | `--primer-rev`      | Reverse primer sequence        |
-|              | `--cutadapt-error`  | Max allowed primer mismatch    |
-|              | `--cutadapt-minlen` | Min read length after trimming |
-|              | `--cutadapt-maxlen` | Max read length after trimming |
-| **VSEARCH**  | `--vsearch-id`      | OTU clustering threshold       |
-| **BLASTn**   | `--blast-evalue`    | E-value cutoff for hits        |
-|              | `--blast-identity`  | Min percent identity           |
-|              | `--blast-qcov`      | Min query coverage             |
-| **CPU Threads**  | `-t`                | Number of CPU threads to use   |
+| **NanoFilt** | `-q`             | Min Phred quality score (Default: 12)       |
+|              | `-l`            | Min read length (Default: 180)               |
+|              | `-L`            | Max read length (Default: 320)               |
+| **Cutadapt** | `--primer-fwd`      | Forward primer sequence  (Default: overhang + Mifish-U)      |
+|              | `--primer-rev`      | Reverse primer sequence  (Default: overhang + Mifish-U)      |
+|              | `--cutadapt-error`  | Max allowed primer mismatch  (Default: 0.2)  |
+|              | `--cutadapt-minlen` | Min read length after trimming (Default: 150) |
+|              | `--cutadapt-maxlen` | Max read length after trimming (Default: 200) |
+| **VSEARCH**  | `--vsearch-id`      | OTU clustering threshold (Default: 97)      |
+| **BLASTn**   | `--blast-evalue`    | E-value cutoff for hits (Default: 0.001)    |
+|              | `--blast-identity`  | Min percent identity (Default: 0.97)         |
+|              | `--blast-qcov`      | Min query coverage  (Default: 0.90)         |
+| **CPU Threads**  | `-t`                | Number of CPU threads to use (Default: 4)  |
