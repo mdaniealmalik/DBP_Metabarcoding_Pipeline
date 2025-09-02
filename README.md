@@ -92,10 +92,13 @@ MyProject/
 └── result_blastn.txt         # (Auto-generated) BLAST taxonomic assignments
 ```
 
-You can use the data structure in [my example data and database](https://github.com/mdaniealmalik/DBP_pipeline_nanopore_metabarcoding/tree/main/MyProject) to try this pipeline and before try it into your real datasets. 
+You can use the data structure in [my example data and database](https://github.com/mdaniealmalik/DBP_pipeline_nanopore_metabarcoding/tree/main/MyProject) to try this pipeline, and before trying it on your real datasets. 
 
-Or if you have already cloned this repositor,y you can come to "MyProject" folder
+Before running the pipeline on your dataset, copy the file `DBP_run_pipeline_v2.sh` from the `bin` folder into your dataset folder (e.g., `MyProject`), and then navigate into the `MyProject` directory.
 
+```bash
+cp bin/DBP_run_pipeline_v2.sh MyProject/DBP_run_pipeline_v2.sh
+```
 ```bash
 cd MyProject
 ```
