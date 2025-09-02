@@ -36,8 +36,8 @@ Or customize parameters:
 ```bash
 bash DBP_run_pipeline_v2.sh \
   -q 12 -l 200 -L 320 \
-  --primer-fwd "GACTGGGATTAGATACCCC" \
-  --primer-rev "TGGCACGAGTTTTACCGGC" \
+  --primer-fwd "TTTCTGTTGGTGCTGATATTGCGCCGGTAAAACTCGTGCCAGC" \
+  --primer-rev "ACTTGCCTGTCGCTCTATCTTCCATAGTGGGGTATCTAATCCCAGTTTG" \
   --cutadapt-error 0.2 \
   --cutadapt-minlen 160 \
   --cutadapt-maxlen 220 \
@@ -47,6 +47,7 @@ bash DBP_run_pipeline_v2.sh \
   --blast-qcov 95 \
   -t 8
 ```
+PS: Sometimes the native barcode includes an overhang with the primer, so make sure to input the primer sequence with the overhang.
 
 Parameter information:
 | Tool         | Parameter           | Description                    |
