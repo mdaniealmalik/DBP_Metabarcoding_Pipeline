@@ -30,6 +30,7 @@ chmod +x DBP_run_pipeline_v2.sh
 When preparing your files for the pipeline, your working directory should be organized as follows:
 MyProject/
 
+```graphql
 ├── 1_Sample/                 # Raw input FASTQ files (gzip-compressed)
 │   ├── sample1.fastq.gz
 │   ├── sample2.fastq.gz
@@ -49,6 +50,7 @@ MyProject/
 │
 ├── otu_table.tsv             # (Auto-generated) OTU abundance table
 └── result_blastn.txt         # (Auto-generated) BLAST taxonomic assignments
+```
 
 # Usage
 
