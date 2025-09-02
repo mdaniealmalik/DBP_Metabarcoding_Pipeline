@@ -106,7 +106,7 @@ You may use:
 Before running the pipeline on your dataset, copy the file `DBP_run_pipeline_v2.sh` and `DBP_LCA_assign.R` from the `bin` folder into your dataset folder (e.g., `MyProject`), and then navigate into the `MyProject` directory.
 
 ```bash
-cp bin/DBP_run_pipeline_v2.sh MyProject/DBP_run_pipeline_v2.sh
+cp bin/DBP_run_pipeline_v2 MyProject/DBP_run_pipeline_v2
 ```
 ```bash
 cp bin/DBP_LCA_assign.R MyProject/DBP_LCA_assign.R
@@ -122,7 +122,7 @@ bash DBP_run_pipeline_v2.sh
 
 Or customise parameters:
 ```bash
-bash DBP_run_pipeline_v2.sh \
+bash DBP_run_pipeline_v2 \
   -q 12 -l 200 -L 320 \
   --primer-fwd "TTTCTGTTGGTGCTGATATTGCGCCGGTAAAACTCGTGCCAGC" \
   --primer-rev "ACTTGCCTGTCGCTCTATCTTCCATAGTGGGGTATCTAATCCCAGTTTG" \
