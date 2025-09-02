@@ -88,15 +88,6 @@ MyProject/
 
 You can use the data structure in [my example data and database](https://github.com/mdaniealmalik/DBP_pipeline_nanopore_metabarcoding/tree/main/MyProject) to try this pipeline, and before trying it on your real datasets. 
 
-Before running the pipeline on your dataset, copy the file `DBP_run_pipeline_v2.sh` from the `bin` folder into your dataset folder (e.g., `MyProject`), and then navigate into the `MyProject` directory.
-
-```bash
-cp bin/DBP_run_pipeline_v2.sh MyProject/DBP_run_pipeline_v2.sh
-```
-```bash
-cd MyProject
-```
-
 ## 📚 Database
 This pipeline requires a reference database for taxonomic assignment with **BLASTn**.  
 Place your reference FASTA file in the folder `database/`:  
@@ -111,7 +102,14 @@ You may use:
 ⚠️ Make sure the file is named `database.fasta` and stored inside the `database/` folder before running the pipeline.
 
 # ▶️ Usage
+Before running the pipeline on your dataset, copy the file `DBP_run_pipeline_v2.sh` from the `bin` folder into your dataset folder (e.g., `MyProject`), and then navigate into the `MyProject` directory.
 
+```bash
+cp bin/DBP_run_pipeline_v2.sh MyProject/DBP_run_pipeline_v2.sh
+```
+```bash
+cd MyProject
+```
 Run with default parameters:
 ```bash
 bash DBP_run_pipeline_v2.sh
