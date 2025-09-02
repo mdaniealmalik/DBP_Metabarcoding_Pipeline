@@ -55,7 +55,7 @@ conda activate dbp_pipeline
 
 **Make the pipeline script executable**
 ```bash
-chmod +x bin/DBP_run_pipeline_v2.sh
+chmod +x bin/DBP_run_pipeline_v2
 ```
 
 # 📁 Project Folder Structure
