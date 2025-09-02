@@ -74,7 +74,7 @@ MyProject/
 │   └── database.txt          # Custom or curated reference taxon names (Accession number and taxon information) 
 │
 ├── DBP_run_pipeline_v2.sh    # Pipeline script (make sure it's executable)
-├── DBP_LCA_assign.R          # Pipeline script (make sure it's executable)
+├── DBP_LCA_assign.R          # Pipeline script for LCA (make sure it's executable)
 │
 ├── 2_NanoFilt_output/        # (Auto-generated) Quality filtered reads
 ├── 3_cutadapt_output/        # (Auto-generated) Primer-trimmed reads
