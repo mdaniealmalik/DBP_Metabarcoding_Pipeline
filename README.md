@@ -1,6 +1,6 @@
 # DBP_pipeline_nanopore_metabarcoding
 
-# Introduction
+# 🧬 Introduction
 
 The **DBP Metabarcoding Pipeline v2** is designed for processing Nanopore eDNA amplicon sequencing data.  
 It performs the following steps:
@@ -12,7 +12,7 @@ It performs the following steps:
 
 ---
 
-# Installation
+# 💻 Installation
 
 Clone the repository and install dependencies using Conda:
 
@@ -25,7 +25,7 @@ Make the pipeline script executable:
 chmod +x DBP_run_pipeline_v2.sh
 ```
 
-📁 Project Folder Structure
+# 📁 Project Folder Structure
 
 When preparing your files for the pipeline, your working directory should be organized as follows:
 MyProject/
@@ -53,7 +53,7 @@ MyProject/
 └── result_blastn.txt         # (Auto-generated) BLAST taxonomic assignments
 ```
 
-# Usage
+# ▶️ Usage
 
 Run with default parameters:
 ```bash
