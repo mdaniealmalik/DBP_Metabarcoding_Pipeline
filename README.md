@@ -125,6 +125,7 @@ bash DBP_run_pipeline_v2.sh \
   --blast-evalue 1e-5 \
   --blast-identity 93 \
   --blast-qcov 95 \
+  --blast_max_target 25\
   -t 8
 ```
 **Note**: Sometimes the native barcode includes an overhang with the primer, so make sure to input the primer sequence with the overhang.
@@ -144,4 +145,5 @@ Parameter information:
 | **BLASTn**   | `--blast-evalue`    | E-value cutoff for hits (**Default: 0.001**)    |
 |              | `--blast-identity`  | Min percent identity (**Default: 0.97**)         |
 |              | `--blast-qcov`      | Min query coverage  (**Default: 0.90**)         |
+|              | `--blast_max_target`          | how many top database sequences (hits) (**Default: 25**)  |
 | **CPU Threads**  | `-t`                | Number of CPU threads to use (**Default: 4**)  |
