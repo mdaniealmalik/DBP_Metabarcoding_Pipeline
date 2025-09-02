@@ -5,8 +5,8 @@ quality_threshold=10
 min_length=180
 max_length=320
 
-primer_fwd="GCCGGTAAAACTCGTGCCAGC"
-primer_rev="CATAGTGGGGTATCTAATCCCAGTTTG"
+primer_fwd="TTTCTGTTGGTGCTGATATTGCGCCGGTAAAACTCGTGCCAGC"
+primer_rev="ACTTGCCTGTCGCTCTATCTTCCATAGTGGGGTATCTAATCCCAGTTTG"
 cutadapt_error=0.2
 cutadapt_minlen=150
 cutadapt_maxlen=200
