@@ -182,5 +182,3 @@ awk -F'" "' '{gsub(/"/, "", $1); gsub(/"/, "", $2); print $1 "\t" $2}' database/
 ```bash
 mv database/database_fixed.txt database/database.txt
 ```
-
-**After running the pipeline completely, the result data structure is like in [Output folder](Output).**
