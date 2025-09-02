@@ -103,11 +103,15 @@ You may use:
 ⚠️ Make sure the file is named `database.fasta` and stored inside the `database/` folder before running the pipeline.
 
 # ▶️ Usage
-Before running the pipeline on your dataset, copy the file `DBP_run_pipeline_v2.sh` from the `bin` folder into your dataset folder (e.g., `MyProject`), and then navigate into the `MyProject` directory.
+Before running the pipeline on your dataset, copy the file `DBP_run_pipeline_v2.sh` and `DBP_LCA_assign.R` from the `bin` folder into your dataset folder (e.g., `MyProject`), and then navigate into the `MyProject` directory.
 
 ```bash
 cp bin/DBP_run_pipeline_v2.sh MyProject/DBP_run_pipeline_v2.sh
 ```
+```bash
+cp bin/DBP_LCA_assign.R MyProject/DBP_LCA_assign.R
+```
+
 ```bash
 cd MyProject
 ```
@@ -116,7 +120,7 @@ Run with default parameters:
 bash DBP_run_pipeline_v2.sh
 ```
 
-Or customize parameters:
+Or customise parameters:
 ```bash
 bash DBP_run_pipeline_v2.sh \
   -q 12 -l 200 -L 320 \
@@ -151,3 +155,13 @@ Parameter information:
 |              | `--blast-qcov`      | Min query coverage  (**Default: 0.90**)         |
 |              | `--blast_max_target`          | how many top database sequences (hits) (**Default: 25**)  |
 | **CPU Threads**  | `-t`                | Number of CPU threads to use (**Default: 4**)  |
+
+
+**Run the optional LCA refinement**
+```bash
+Rscript DBP_LCA_assign.R 90 0.001 8 MyDataset
+```
+Or customise parameters (follow your minimum identity from blastn):
+```bash
+Rscript DBP_LCA_assign.R 97
+```
