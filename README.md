@@ -35,8 +35,6 @@ The pipeline proceeds with the following steps:
 
 # 💻 Installation (Step by Step)
 
-Clone the repository and install dependencies using Conda:
-
 **Clone the repository**  
 ```bash
 git clone https://github.com/mdaniealmalik/DBP_pipeline_nanopore_metabarcoding.git
