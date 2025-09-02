@@ -10,10 +10,7 @@ The workflow used to construct these curated databases is illustrated in the fig
 
 ![workflow](Workflow_analysis.jpg)
 
-Acknowledgments:
+**Acknowledgments:**
 
 This research was funded by the Sophie Danforth Conservation Biology Fund.
 
-References:
-
-Gold, Z., Curd, E., Gal, L., Gallego, R., Nielsen, S., & Silliman, K. (2023). RCRUX generated MiFISH Universal 12S expanded +FishCARD Reference Database [Dataset]. In Zenodo (CERN European Organization for Nuclear Research). https://doi.org/10.5281/zenodo.8409239
