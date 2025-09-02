@@ -164,7 +164,7 @@ blastn -query "$output_dir/combine/nonchimeras_clean.fasta" \
        -out result_blastn.txt \
        -outfmt "6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore" \
        -num_threads "$threads" \
-       -strand both -dust yes -max_target_seqs 2 \
+       -strand both -dust yes -max_target_seqs 25 \
        -perc_identity "$blast_identity" \
        -qcov_hsp_perc "$blast_qcov"
 
