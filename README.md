@@ -92,6 +92,14 @@ MyProject/
 └── result_blastn.txt         # (Auto-generated) BLAST taxonomic assignments
 ```
 
+You can use the data structure in [my example data and database](https://github.com/mdaniealmalik/DBP_pipeline_nanopore_metabarcoding/tree/main/MyProject) to try this pipeline and before try it into your real datasets. 
+
+Or if you have already cloned this repositor,y you can come to "MyProject" folder
+
+```bash
+cd MyProject
+```
+
 ## 📚 Database
 This pipeline requires a reference database for taxonomic assignment with **BLASTn**.  
 Place your reference FASTA file in the folder `database/`:  
