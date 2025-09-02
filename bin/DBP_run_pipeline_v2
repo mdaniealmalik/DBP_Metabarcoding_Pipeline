@@ -5,15 +5,15 @@ quality_threshold=12
 min_length=180
 max_length=320
 
-primer_fwd="GCCGGTAAAACTCGTGCCAGC"
-primer_rev="CATAGTGGGGTATCTAATCCCAGTTTG"
+primer_fwd="TTTCTGTTGGTGCTGATATTGCGCCGGTAAAACTCGTGCCAGC"
+primer_rev="ACTTGCCTGTCGCTCTATCTTCCATAGTGGGGTATCTAATCCCAGTTTG"
 cutadapt_error=0.2
 cutadapt_minlen=150
 cutadapt_maxlen=200
 
-vsearch_id=0.95
+vsearch_id=0.97
 blast_evalue=0.001
-blast_identity=90
+blast_identity=97
 blast_qcov=90
 threads=4
 
