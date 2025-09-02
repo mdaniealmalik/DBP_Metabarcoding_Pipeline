@@ -50,7 +50,7 @@ cd DBP_pipeline_nanopore_metabarcoding
 conda env create -f  environment.yml
 ```
 ```bash
-conda activate DBP_pipeline
+conda activate dbp_pipeline
 ```
 
 **Make the pipeline script executable**
