@@ -1,6 +1,6 @@
-# Curated Metabarcoding Database for Marine Fish in Indonesia
+# DBP - DAKI (Database Ikan Indonesia)
 
-This curated reference database is based on the 12S MiFish region and includes only marine fish species (Actinopteri and Chondrichthyes) found in Indonesian waters, specifically designed for use in eDNA and metabarcoding studies. We provide two versions of the database:
+This curated reference database is based on the 12S MiFish region. It includes only marine fish species (Actinopteri and Chondrichthyes) found in Indonesian waters, specifically designed for use in eDNA and metabarcoding studies. We provide two versions of the database:
 
 * LocalDB – a curated dataset containing marine fish taxa recorded in Indonesia, compiled from NCBI and MitoFish. [link](https://github.com/mdaniealmalik/Curated-Metabarcoding-Database-for-Marine-Fish-in-Indonesia/tree/main/database_local)
 
