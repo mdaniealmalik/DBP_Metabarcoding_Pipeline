@@ -117,7 +117,7 @@ cd MyProject
 ```
 Run with default parameters:
 ```bash
-bash DBP_run_pipeline_v2.sh
+bash DBP_run_pipeline_v2
 ```
 
 Or customise parameters:
