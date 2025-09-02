@@ -173,9 +173,10 @@ The file **must be tab-separated** with two columns:
 
 If your file is not in tab-separated format, you can fix it using one of the following commands **before running the LCA step**:
 
-**Case: Your file is comma-separated**
+**Case: Your file is space-separated**
 ```bash
-awk -F',' '{print $1 "\t" $2}' database/database.txt > database/database_fixed.txt
+awk '{$1=$1; print $1 "\t" $2}' OFS="\t" database/database.txt > database/database_fixed.txt
+
 ```
 ```bash
 mv database/database_fixed.txt database/database.txt
