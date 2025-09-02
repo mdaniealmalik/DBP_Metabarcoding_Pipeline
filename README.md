@@ -29,7 +29,8 @@ The pipeline then proceeds with the following steps:
 
 5. **Results** – generate:  
    - `otu_table.tsv` (OTU abundance table)  
-   - `result_blastn.txt` (BLAST taxonomy results)  
+   - `result_blastn.txt` (BLAST taxonomy result)
+   - `mydataset_lca_assignments.tsv` (LCA result)
 
 
 
@@ -73,7 +74,7 @@ MyProject/
 │   └── database.fasta        # Custom or curated reference sequences (only accession number at the header)
 │   └── database.txt          # Custom or curated reference taxon names (Accession number and taxon information) 
 │
-├── DBP_run_pipeline_v2.sh    # Pipeline script (make sure it's executable)
+├── DBP_run_pipeline_v2    # Pipeline script (make sure it's executable)
 ├── DBP_LCA_assign.R          # Pipeline script for LCA (make sure it's executable)
 │
 ├── 2_NanoFilt_output/        # (Auto-generated) Quality filtered reads
@@ -85,12 +86,12 @@ MyProject/
 │
 ├── otu_table.tsv             # (Auto-generated) OTU abundance table
 └── result_blastn.txt         # (Auto-generated) BLAST taxonomic assignments
+└── mydataset_lca_assignments.tsv         # (Auto-generated) LCA process
 ```
-
 You can use the data structure in [my example data and database](https://github.com/mdaniealmalik/DBP_pipeline_nanopore_metabarcoding/tree/main/MyProject) to try this pipeline, and before trying it on your real datasets. 
 
 ## 📚 Database
-This pipeline requires a reference database for taxonomic assignment with **BLASTn**.  
+This pipeline requires a reference database with **BLASTn** for taxonomic assignment.  
 Place your reference FASTA file in the folder `database/`:  
 - The pipeline will automatically create BLAST indices (`.nin`, `.nhr`, `.nsq`) from this FASTA file.  
 
@@ -180,3 +181,5 @@ awk -F'" "' '{gsub(/"/, "", $1); gsub(/"/, "", $2); print $1 "\t" $2}' database/
 ```bash
 mv database/database_fixed.txt database/database.txt
 ```
+
+**After running the pipeline completely, the result data structure is like in [Output folder](Output).**
