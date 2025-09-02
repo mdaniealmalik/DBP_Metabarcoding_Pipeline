@@ -49,9 +49,9 @@ chmod +x DBP_run_pipeline_v2.sh
 # 📁 Project Folder Structure
 
 When preparing your files for the pipeline, your working directory should be organized as follows:
-MyProject/
 
 ```graphql
+MyProject/
 ├── 1_Sample/                 # Raw input FASTQ files (gzip-compressed)
 │   ├── sample1.fastq.gz
 │   ├── sample2.fastq.gz
@@ -59,7 +59,7 @@ MyProject/
 │
 ├── database/                 # Reference database for BLAST
 │   └── database.fasta        # Custom or curated reference sequences (only accession number at the header)
-│   └── database.txt          # Custom or curated reference taxon names (Accesion number and taxon information) 
+│   └── database.txt          # Custom or curated reference taxon names (Accession number and taxon information) 
 │
 ├── DBP_run_pipeline_v2        # Pipeline script (make sure it's executable)
 │
