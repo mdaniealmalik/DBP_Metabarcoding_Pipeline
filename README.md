@@ -74,6 +74,19 @@ MyProject/
 └── result_blastn.txt         # (Auto-generated) BLAST taxonomic assignments
 ```
 
+## 📚 Database
+This pipeline requires a reference database for taxonomic assignment with **BLASTn**.  
+Place your reference FASTA file in the folder `database/`:  
+- The pipeline will automatically create BLAST indices (`.nin`, `.nhr`, `.nsq`) from this FASTA file.  
+
+You may use:
+- A curated database (e.g., **MitoFish 12S**, **NCBI RefSeq**)  
+- A custom database built from your target taxa
+
+⚠️ Make sure the file is named `database.fasta` and stored inside the `database/` folder before running the pipeline.
+
+🐟 We have prepared a curated sequence database for a data sequence fit for MiFish, containing only marine fish species from Indonesia. Please visit [this link](https://github.com/mdaniealmalik/DBP_pipeline_nanopore_metabarcoding/tree/main/Curated-Metabarcoding-Database-for-Marine-Fish-in-Indonesia) to download the database and view details of the curation process.
+
 # ▶️ Usage
 
 Run with default parameters:
