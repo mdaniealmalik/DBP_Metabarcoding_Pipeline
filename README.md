@@ -25,6 +25,31 @@ Make the pipeline script executable:
 chmod +x DBP_run_pipeline_v2.sh
 ```
 
+📁 Project Folder Structure
+
+When preparing your files for the pipeline, your working directory should be organized as follows:
+MyProject/
+
+├── 1_Sample/                 # Raw input FASTQ files (gzip-compressed)
+│   ├── sample1.fastq.gz
+│   ├── sample2.fastq.gz
+│   └── sample3.fastq.gz
+│
+├── database/                 # Reference database for BLAST
+│   └── database.fasta        # Custom or curated reference sequences
+│
+├── DBP_run_pipeline_v2        # Pipeline script (make sure it's executable)
+│
+├── 2_NanoFilt_output/        # (Auto-generated) Quality filtered reads
+├── 3_cutadapt_output/        # (Auto-generated) Primer-trimmed reads
+├── 4_combined_fasta/         # (Auto-generated) FASTA converted reads
+├── 5_vsearch/                # (Auto-generated) VSEARCH results
+│   ├── rename_fasta/
+│   └── combine/
+│
+├── otu_table.tsv             # (Auto-generated) OTU abundance table
+└── result_blastn.txt         # (Auto-generated) BLAST taxonomic assignments
+
 # Usage
 
 Run with default parameters:
