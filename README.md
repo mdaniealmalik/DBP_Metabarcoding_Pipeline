@@ -2,7 +2,7 @@
 
 # 📖 Introduction
 
-**DBP Metabarcoding Pipeline v2**: an open tool for Nanopore eDNA data, built to support biodiversity research, monitoring, and learning in Indonesia. Please visit this [link](dx.doi.org/10.17504/protocols.io.j8nlk94rxv5r/v1) to see **DBP Metabarcoding Pipeline v1**.
+**DBP Metabarcoding Pipeline v2**: an open tool for Nanopore eDNA data, built to support biodiversity research, monitoring, and learning in Indonesia. 
 
 Please note that before using this pipeline, it is assumed that Dorado (or another Nanopore basecaller) has already performed:
 
@@ -10,6 +10,7 @@ Please note that before using this pipeline, it is assumed that Dorado (or anoth
 - ✅ Demultiplexing (per-sample FASTQ files)  
 - ✅ Adapter and barcode removal  
 
+See DBP Metabarcoding Pipeline v1 at dx.doi.org/10.17504/protocols.io.j8nlk94rxv5r/v1.
 ---
 
 ## 🧬 Pipeline Workflow  
