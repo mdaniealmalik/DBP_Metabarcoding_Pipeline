@@ -29,7 +29,7 @@ The pipeline proceeds with the following steps:
    - Tool: `BLASTn`
    - Perform `Lowest Common Ancestor (LCA)` estimation from BLASTN results
 
-5. **Results** – generate:  
+The pipeline **results** – generate:  
    - `otu_table.tsv` (OTU abundance table)  
    - `result_blastn.txt` (BLAST taxonomy result)
    - `mydataset_lca_assignments.tsv` (LCA result)
