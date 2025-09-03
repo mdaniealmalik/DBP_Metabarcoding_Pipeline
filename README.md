@@ -1,4 +1,4 @@
-# DBP_pipeline_nanopore_metabarcoding
+# **DBP Metabarcoding Pipeline**
 
 ## 📖 Introduction
 
