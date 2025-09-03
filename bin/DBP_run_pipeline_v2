@@ -137,17 +137,22 @@ mkdir -p "$output_dir/combine"
 cat "$output_dir"/*.fasta > "$output_dir/combine/combine.fasta"
 
 echo "🔹 STEP 5: Dereplication and clustering with VSEARCH..."
+
+# Dereplication
 vsearch --derep_fulllength "$output_dir/combine/combine.fasta" \
         --output "$output_dir/combine/dereplicated.fasta" --sizeout
 
+# Sort by size and filter singletons
 vsearch --sortbysize "$output_dir/combine/dereplicated.fasta" \
         --output "$output_dir/combine/sorted.fasta" \
         --minsize 2   # removes singletons
 
-vsearch --cluster_fast "$output_dir/combine/dereplicated.fasta" \
+# Clustering into OTUs
+vsearch --cluster_fast "$output_dir/combine/sorted.fasta" \
         --centroids "$output_dir/combine/clustered.fasta" \
         --id "$vsearch_id" --sizein --sizeout
 
+# Chimera checking
 vsearch --uchime_denovo "$output_dir/combine/clustered.fasta" \
         --chimeras "$output_dir/combine/chimeras.fasta" \
         --nonchimeras "$output_dir/combine/nonchimeras.fasta"
