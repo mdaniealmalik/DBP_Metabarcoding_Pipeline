@@ -140,6 +140,10 @@ echo "🔹 STEP 5: Dereplication and clustering with VSEARCH..."
 vsearch --derep_fulllength "$output_dir/combine/combine.fasta" \
         --output "$output_dir/combine/dereplicated.fasta" --sizeout
 
+vsearch --sortbysize "$output_dir/combine/dereplicated.fasta" \
+        --output "$output_dir/combine/sorted.fasta" \
+        --minsize 2   # removes singletons
+
 vsearch --cluster_fast "$output_dir/combine/dereplicated.fasta" \
         --centroids "$output_dir/combine/clustered.fasta" \
         --id "$vsearch_id" --sizein --sizeout
