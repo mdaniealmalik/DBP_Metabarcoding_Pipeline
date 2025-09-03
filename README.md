@@ -21,7 +21,7 @@ The pipeline proceeds with the following steps:
 2. **Primer Trimming** – remove amplification primers  
    - Tool: `Cutadapt`  
 
-3. **OTU Clustering** – dereplicate, cluster, and remove chimeras  
+3. **OTU Clustering** – dereplicate, cluster, remove singleton, and remove chimeras  
    - Tool: `VSEARCH`  
 
 4. **Taxonomic Assignment** – assign sequences to reference database
