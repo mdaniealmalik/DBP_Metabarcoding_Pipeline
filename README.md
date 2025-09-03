@@ -11,7 +11,6 @@ Please note that before using this pipeline, it is assumed that Dorado (or anoth
 - ✅ Adapter and barcode removal  
 
 See DBP Metabarcoding Pipeline v1 at dx.doi.org/10.17504/protocols.io.j8nlk94rxv5r/v1.
----
 
 ## 🧬 Pipeline Workflow  
 
