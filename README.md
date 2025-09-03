@@ -10,7 +10,7 @@ Please note that before using this pipeline, it is assumed that Dorado (or anoth
 - ✅ Demultiplexing (per-sample FASTQ files)  
 - ✅ Adapter and barcode removal  
 
-See DBP Metabarcoding Pipeline v1 at [(dx.doi.org/10.17504/protocols.io.j8nlk94rxv5r/v1)].
+See DBP Metabarcoding Pipeline v1 at this [link](dx.doi.org/10.17504/protocols.io.j8nlk94rxv5r/v1).
 
 ## 🧬 Pipeline Workflow  
 
