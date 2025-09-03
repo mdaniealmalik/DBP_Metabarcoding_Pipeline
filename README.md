@@ -1,6 +1,6 @@
 # DBP_pipeline_nanopore_metabarcoding
 
-# 📖 Introduction
+## 📖 Introduction
 
 **DBP Metabarcoding Pipeline v2**: an open tool for Nanopore metabarcoding data, built to support eDNA *biodiversity research*, *monitoring*, and *learning* in **Indonesia**. 
 
@@ -34,7 +34,7 @@ The pipeline proceeds with the following steps:
    - `result_blastn.txt` (BLAST taxonomy result)
    - `mydataset_lca_assignments.tsv` (LCA result)
 
-# 💻 Installation (Step by Step)
+## 💻 Installation (Step by Step)
 
 **Clone the repository**  
 ```bash
@@ -57,7 +57,7 @@ conda activate dbp_pipeline
 chmod +x bin/DBP_run_pipeline_v2
 ```
 
-# 📁 Project Folder Structure
+## 📁 Project Folder Structure
 
 When preparing your files for the pipeline, your working directory should be organized as follows:
 
@@ -101,7 +101,7 @@ You may use:
 
 ⚠️ Make sure the file is named `database.fasta` and stored inside the `database/` folder before running the pipeline.
 
-# ▶️ Usage
+## ▶️ Usage
 Before running the pipeline on your dataset, copy the file `DBP_run_pipeline_v2.sh` and `DBP_LCA_assign.R` from the `bin` folder into your dataset folder (e.g., `MyProject`), and then navigate into the `MyProject` directory.
 
 ```bash
