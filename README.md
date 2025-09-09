@@ -128,6 +128,7 @@ bash DBP_run_pipeline_v2 \
   --cutadapt-error 0.2 \
   --cutadapt-minlen 160 \
   --cutadapt-maxlen 220 \
+  --minsize 1 \
   --vsearch-id 0.97 \
   --blast-evalue 0.001 \
   --blast-identity 93 \
@@ -148,7 +149,8 @@ Parameter information:
 |              | `--cutadapt-error`  | Max allowed primer mismatch  (**Default: 0.2**)  |
 |              | `--cutadapt-minlen` | Min read length after trimming (**Default: 150**) |
 |              | `--cutadapt-maxlen` | Max read length after trimming (**Default: 200**) |
-| **VSEARCH**  | `--vsearch-id`      | OTU clustering threshold (**Default: 97**)      |
+| **VSEARCH**  | `--minsize`      | Minimum abundance threshold for sequences (**Default = 2**). If set to 1 for flexibility, we recommend removing singletons during downstream analysis.|
+|              | `--vsearch-id`      | OTU clustering threshold (**Default: 97**)      |
 | **BLASTn**   | `--blast-evalue`    | E-value cutoff for hits (**Default: 0.001**)    |
 |              | `--blast-identity`  | Min percent identity (**Default: 0.97**)         |
 |              | `--blast-qcov`      | Min query coverage  (**Default: 0.90**)         |
