@@ -150,12 +150,12 @@ Parameter information:
 |              | `--cutadapt-minlen`    | Min read length after trimming (**Default: 150**) |
 |              | `--cutadapt-maxlen`    | Max read length after trimming (**Default: 200**) |
 | **VSEARCH**  | `--minsize`            | Minimum abundance threshold for sequences (**Default = 2**)|
-|              |                        | *Note for --minsize If set to **1** for flexibility, we recommend removing singletons during downstream analysis*|
+|              |                        | *Note for --minsize If set to **1**, we recommend removing singletons during downstream analysis*|
 |              | `--vsearch-id`         | OTU clustering threshold (**Default: 97**)      |
 | **BLASTn**   | `--blast-evalue`       | E-value cutoff for hits (**Default: 0.001**)    |
 |              | `--blast-identity`     | Min percent identity (**Default: 0.97**)         |
 |              | `--blast-qcov`         | Min query coverage  (**Default: 0.90**)         |
-|              | *`--blast_max_target`*          | how many top database sequences (hits) (**Default: 10**)  |
+|              | `--blast_max_target`          | how many top database sequences (hits) (**Default: 10**)  |
 | **CPU Threads**  | `-t`                   | Number of CPU threads to use (**Default: 4**)  |
 
 
