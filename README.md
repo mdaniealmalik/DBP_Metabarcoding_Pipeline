@@ -139,24 +139,24 @@ bash DBP_run_pipeline_v2 \
 **Note**: Sometimes the native barcode includes an overhang with the primer, so make sure to input the primer sequence with the overhang.
 
 Parameter information:
-| Tool         | Parameter           | Description                    |
-| ------------ | ------------------- | ------------------------------ |
-| **NanoFilt** | `-q`             | Min Phred quality score (**Default: 12**)       |
-|              | `-l`            | Min read length (**Default: 180**)               |
-|              | `-L`            | Max read length (**Default: 320**)               |
-| **Cutadapt** | `--primer-fwd`      | Forward primer sequence  (**Default: overhang + Mifish-U**)      |
-|              | `--primer-rev`      | Reverse primer sequence  (**Default: overhang + Mifish-U**)      |
-|              | `--cutadapt-error`  | Max allowed primer mismatch  (**Default: 0.2**)  |
-|              | `--cutadapt-minlen` | Min read length after trimming (**Default: 150**) |
-|              | `--cutadapt-maxlen` | Max read length after trimming (**Default: 200**) |
-| **VSEARCH**  | `--minsize`      | Minimum abundance threshold for sequences (**Default = 2**)|
-|              |   | *Note for --minsize If set to **1** for flexibility, we recommend removing singletons during downstream analysis*|
-|              | `--vsearch-id`      | OTU clustering threshold (**Default: 97**)      |
-| **BLASTn**   | `--blast-evalue`    | E-value cutoff for hits (**Default: 0.001**)    |
-|              | `--blast-identity`  | Min percent identity (**Default: 0.97**)         |
-|              | `--blast-qcov`      | Min query coverage  (**Default: 0.90**)         |
+| Tool         | Parameter              | Description                    |
+| ------------ | ---------------------- | ------------------------------ |
+| **NanoFilt** | `-q`                   | Min Phred quality score (**Default: 12**)       |
+|              | `-l`                   | Min read length (**Default: 180**)               |
+|              | `-L`                   | Max read length (**Default: 320**)               |
+| **Cutadapt** | `--primer-fwd`         | Forward primer sequence  (**Default: overhang + Mifish-U**)      |
+|              | `--primer-rev`         | Reverse primer sequence  (**Default: overhang + Mifish-U**)      |
+|              | `--cutadapt-error`     | Max allowed primer mismatch  (**Default: 0.2**)  |
+|              | `--cutadapt-minlen`    | Min read length after trimming (**Default: 150**) |
+|              | `--cutadapt-maxlen`    | Max read length after trimming (**Default: 200**) |
+| **VSEARCH**  | `--minsize`            | Minimum abundance threshold for sequences (**Default = 2**)|
+|              |                        | *Note for --minsize If set to **1** for flexibility, we recommend removing singletons during downstream analysis*|
+|              | `--vsearch-id`         | OTU clustering threshold (**Default: 97**)      |
+| **BLASTn**   | `--blast-evalue`       | E-value cutoff for hits (**Default: 0.001**)    |
+|              | `--blast-identity`     | Min percent identity (**Default: 0.97**)         |
+|              | `--blast-qcov`         | Min query coverage  (**Default: 0.90**)         |
 |              | `--blast_max_target`          | how many top database sequences (hits) (**Default: 10**)  |
-| **CPU Threads**  | `-t`                | Number of CPU threads to use (**Default: 4**)  |
+| **CPU Threads**  | `-t`                   | Number of CPU threads to use (**Default: 4**)  |
 
 
 **Run the optional LCA refinement**
