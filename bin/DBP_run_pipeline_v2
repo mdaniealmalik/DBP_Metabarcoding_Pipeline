@@ -11,11 +11,12 @@ cutadapt_error=0.2
 cutadapt_minlen=150
 cutadapt_maxlen=200
 
+min_size=2
 vsearch_id=0.97
 blast_evalue=0.001
 blast_identity=97
 blast_qcov=90
-blast_max_target=10    # NEW: default number of BLAST hits per query
+blast_max_target=10
 threads=4
 
 # =================== ARGUMENT PARSING ===================
@@ -28,7 +29,7 @@ while [[ "$#" -gt 0 ]]; do
       echo "Usage: DBP_run_pipeline_v2 [options]"
       echo ""
       echo "NanoFilt options:"
-      echo "  -q                Minimum quality score (default: 10)"
+      echo "  -q                Minimum quality score (default: 12)"
       echo "  -l                Minimum read length (default: 180)"
       echo "  -L                Maximum read length (default: 320)"
       echo ""
@@ -40,13 +41,14 @@ while [[ "$#" -gt 0 ]]; do
       echo "  --cutadapt-maxlen Maximum length after trimming (default: 200)"
       echo ""
       echo "VSEARCH options:"
-      echo "  --vsearch-id      OTU clustering identity threshold (default: 0.95)"
+      echo "  --minsize         Minimum abundance threshold for sequences (default: 2)"
+      echo "  --vsearch-id      OTU clustering identity threshold (default: 0.97)"
       echo ""
       echo "BLASTn options:"
       echo "  --blast-evalue      E-value threshold (default: 0.001)"
-      echo "  --blast-identity    Minimum percent identity (default: 90)"
+      echo "  --blast-identity    Minimum percent identity (default: 97)"
       echo "  --blast-qcov        Minimum query coverage (default: 90)"
-      echo "  --blast-max-target  Maximum target sequences per query (default: 2)"
+      echo "  --blast-max-target  Maximum target sequences per query (default: 10)"
       echo ""
       echo "General options:"
       echo "  -t                Number of threads to use (default: 4)"
@@ -62,11 +64,12 @@ while [[ "$#" -gt 0 ]]; do
     --cutadapt-error) cutadapt_error="$2"; shift ;;
     --cutadapt-minlen) cutadapt_minlen="$2"; shift ;;
     --cutadapt-maxlen) cutadapt_maxlen="$2"; shift ;;
+    --minsize) min_size="$2"; shift ;;   # FIXED
     --vsearch-id) vsearch_id="$2"; shift ;;
     --blast-evalue) blast_evalue="$2"; shift ;;
     --blast-identity) blast_identity="$2"; shift ;;
     --blast-qcov) blast_qcov="$2"; shift ;;
-    --blast-max-target) blast_max_target="$2"; shift ;;  # NEW
+    --blast-max-target) blast_max_target="$2"; shift ;;
     -t) threads="$2"; shift ;;
     *) echo "❌ Unknown option: $1"; exit 1 ;;
   esac
@@ -145,7 +148,7 @@ vsearch --derep_fulllength "$output_dir/combine/combine.fasta" \
 # Sort by size and filter singletons
 vsearch --sortbysize "$output_dir/combine/dereplicated.fasta" \
         --output "$output_dir/combine/sorted.fasta" \
-        --minsize 2   # removes singletons
+        --minsize "$min_size"
 
 # Clustering into OTUs
 vsearch --cluster_fast "$output_dir/combine/sorted.fasta" \
@@ -182,3 +185,4 @@ blastn -query "$output_dir/combine/nonchimeras_clean.fasta" \
        -qcov_hsp_perc "$blast_qcov"
 
 echo "✅ Pipeline completed successfully!"
+
