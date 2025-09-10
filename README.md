@@ -84,7 +84,7 @@ MyProject/
 │
 ├── otu_table.tsv                   # (Auto-generated) OTU abundance table
 └── result_blastn.txt               # (Auto-generated) BLAST taxonomic assignments
-└── DBP_results_LCA_results.tsv   # (Auto-generated) LCA result
+└── DBP_results_LCA_results.tsv     # (Auto-generated) LCA result
 ```
 You can use the data structure in [my example data and database](https://github.com/mdaniealmalik/DBP_pipeline_nanopore_metabarcoding/tree/main/MyProject) to try this pipeline, and before trying it on your real datasets. 
 
