@@ -32,7 +32,7 @@ The pipeline proceeds with the following steps:
 The pipeline **results** – generate:  
    - `otu_table.tsv` (OTU abundance table)  
    - `result_blastn.txt` (BLAST taxonomy result)
-   - `mydataset_lca_assignments.tsv` (LCA result)
+   - `DBP_results_LCA_results.tsv` (LCA result)
 
 ## 💻 Installation (Step by Step)
 
