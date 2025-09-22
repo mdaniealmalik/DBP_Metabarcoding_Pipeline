@@ -14,6 +14,8 @@ Please note that before using this pipeline, it is assumed that Dorado (or anoth
 
 ## 🧬 Pipeline Workflow  
 
+![Workflow](./Asset/workflows_pipeline.jpg)
+
 The pipeline proceeds with the following steps:
 
 1. **Quality Filtering** – remove low-quality or too short/long reads  
