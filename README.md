@@ -14,7 +14,7 @@ Please note that before using this pipeline, it is assumed that Dorado (or anoth
 
 ## 🧬 Pipeline Workflow  
 
-![Workflow](./workflows.jpg)
+![Workflow](./asset/workflows.jpg)
 
 The pipeline proceeds with the following steps:
 
