@@ -37,6 +37,7 @@ The pipeline **results** – generate:
    - `DBP_results_LCA_results.tsv` (LCA result)
 
 ## 💻 Installation (Step by Step)
+Before setting up the pipeline, ensure that Conda or [Miniconda](https://www.anaconda.com/docs/getting-started/miniconda/install) is installed, as the pipeline runs within a Conda environment.
 
 **Clone the repository**  
 ```bash
