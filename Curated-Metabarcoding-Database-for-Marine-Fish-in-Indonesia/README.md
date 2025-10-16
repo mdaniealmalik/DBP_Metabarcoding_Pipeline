@@ -1,4 +1,4 @@
-# DBP - DAKI (Database Ikan Indonesia)
+# DBP - Indonesian Marine Fish Sequences or I-MarFish
 
 This curated reference database is based on the 12S MiFish region. It includes only marine fish species (Actinopteri and Chondrichthyes) found in Indonesian waters, specifically designed for use in eDNA and metabarcoding studies. We provide two versions of the database:
 
