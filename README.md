@@ -195,7 +195,7 @@ Malik, M.D.A., Aulya, M., Cahyani, N.K.D. 2026. DBP Metabarcoding Pipeline: an i
 
 ```bibtex
 @article{Malik et al. 2026,
-  author  = {Malik, M. D. A. and Aulya, M. and Cahyani, N. K. D.},
+  author  = {Malik, M.D.A., Aulya, M., Cahyani, N.K.D.},
   title   = {DBP Metabarcoding Pipeline: an integrated tool for eDNA analysis of ONT data using the Indonesian Marine Fish Database},
   journal = {Regional Studies in Marine Science},
   year    = {2026},
