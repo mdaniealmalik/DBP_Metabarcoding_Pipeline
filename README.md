@@ -2,7 +2,7 @@
 
 # **DBP Metabarcoding Pipeline**
 
-## 📖 Introduction
+## 🚀 Introduction
 
 **DBP Metabarcoding Pipeline v2**: an open tool for Nanopore metabarcoding data, built to support eDNA *biodiversity research*, *monitoring*, and *learning* in **Indonesia**. 
 
@@ -187,3 +187,8 @@ awk -F'" "' '{gsub(/"/, "", $1); gsub(/"/, "", $2); print $1 "\t" $2}' database/
 ```bash
 mv database/database_fixed.txt database/database.txt
 ```
+
+## 📖 How to Cite
+If you use this pipeline and/or curated database in your research, please cite:
+
+Malik, M.D.A., Aulya, M., Cahyani, N.K.D. 2026. DBP Metabarcoding Pipeline: an integrated tool for eDNA analysis of ONT data using the Indonesian Marine Fish Database. *Regional Studies in Marine Science*, 104868. https://doi.org/10.1016/j.rsma.2026.104868
