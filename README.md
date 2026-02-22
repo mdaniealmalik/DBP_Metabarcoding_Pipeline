@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.1000%2Fabcd.2025.001-blue)](https://doi.org/10.1016/j.rsma.2026.104868)
+
 # **DBP Metabarcoding Pipeline**
 
 ## 📖 Introduction
