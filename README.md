@@ -194,7 +194,7 @@ If you use this pipeline and/or this curated database in your research, please c
 Malik, M.D.A., Aulya, M., Cahyani, N.K.D. 2026. DBP Metabarcoding Pipeline: an integrated tool for eDNA analysis of ONT data using the Indonesian Marine Fish Database. *Regional Studies in Marine Science*, 104868. https://doi.org/10.1016/j.rsma.2026.104868
 
 ```bibtex
-@article{Malik2026_DBP,
+@article{Malik et al. 2025,
   author  = {Malik, M. D. A. and Aulya, M. and Cahyani, N. K. D.},
   title   = {DBP Metabarcoding Pipeline: an integrated tool for eDNA analysis of ONT data using the Indonesian Marine Fish Database},
   journal = {Regional Studies in Marine Science},
