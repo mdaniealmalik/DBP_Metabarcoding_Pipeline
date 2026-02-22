@@ -1,4 +1,4 @@
-[![DOI](https://img.shields.io/badge/DOI-10.1006%2Fj.rsma.2026.104868-blue)](https://doi.org/10.1016/j.rsma.2026.104868)
+[![DOI](https://img.shields.io/badge/DOI-10.1016%2Fj.rsma.2026.104868-blue)](https://doi.org/10.1016/j.rsma.2026.104868)
 
 # **DBP Metabarcoding Pipeline**
 
